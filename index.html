@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothes Store — Kurta, Jeans, T-Shirts & More</title>
+  <meta name="description" content="Shop premium kurtas, jeans, t-shirts, jackets and dresses at Clothes Store. Fair prices, easy returns, delivery across Pakistan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="topbar"><i class="bi bi-truck"></i>Free delivery on orders above Rs. 5,000 &nbsp;·&nbsp; Cash on delivery available</div>
+
+<nav class="navbar navbar-expand-lg site-nav sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Clothes<span>.</span>Store</a>
+    <div class="d-flex align-items-center gap-2 order-lg-last">
+      <button class="cart-btn" type="button" aria-label="Open cart"><i class="bi bi-bag"></i><span class="cart-badge" style="display:none">0</span></button>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    </div>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html?cat=kurta#shop" data-go-cat="kurta">Kurta Shalwar</a></li>
+            <li><a class="dropdown-item" href="index.html?cat=tshirt#shop" data-go-cat="tshirt">T-Shirts</a></li>
+            <li><a class="dropdown-item" href="index.html?cat=jeans#shop" data-go-cat="jeans">Jeans</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="index.html?cat=jackets#shop" data-go-cat="jackets">Jackets</a></li>
+            <li><a class="dropdown-item" href="index.html?cat=dresses#shop" data-go-cat="dresses">Dresses</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <form class="nav-search" role="search" action="index.html" method="get">
+        <input class="form-control" type="search" name="q" placeholder="Search clothes…" aria-label="Search">
+        <button type="submit" aria-label="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5500">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/hero1.svg" data-local="images/hero1" data-photo="https://img.freepik.com/premium-photo/luxury-men-s-suits-boutique-stylish-clothing-store-interior_782516-59801.jpg?semt=ais_hybrid&w=740&q=80" referrerpolicy="no-referrer" alt="Clothing boutique interior">
+        <div class="hero-caption"><div class="container"><div class="inner">
+          <span class="eyebrow">New Season · 2026</span>
+          <h1>New Summer Collection</h1>
+          <p>Upgrade your wardrobe today with premium styles made for everyday comfort.</p>
+          <a href="#shop" class="btn btn-accent btn-lg px-4" data-go-cat="all">Shop Now <i class="bi bi-arrow-right ms-1"></i></a>
+        </div></div></div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/hero2.svg" data-local="images/hero2" data-photo="https://blogpakistan.pk/wp-content/uploads/2021/02/charcoal.jpg" referrerpolicy="no-referrer" alt="Flash sale">
+        <div class="hero-caption"><div class="container"><div class="inner">
+          <span class="eyebrow">Limited Time</span>
+          <h2>Flash Sale — up to 50% OFF</h2>
+          <p>Limited time offer on premium brands. Grab your favourites before they're gone.</p>
+          <a href="#sale" class="btn btn-accent btn-lg px-4">Claim Offer <i class="bi bi-arrow-right ms-1"></i></a>
+        </div></div></div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></button>
+  </div>
+</header>
+
+<!-- ============ PERKS ============ -->
+<section class="perks">
+  <div class="container"><div class="row">
+    <div class="col-6 col-lg-3"><div class="perk"><i class="bi bi-truck"></i><div><strong>Free Delivery</strong><small>Orders over Rs. 5,000</small></div></div></div>
+    <div class="col-6 col-lg-3"><div class="perk"><i class="bi bi-arrow-repeat"></i><div><strong>15-Day Returns</strong><small>No questions asked</small></div></div></div>
+    <div class="col-6 col-lg-3"><div class="perk"><i class="bi bi-cash-coin"></i><div><strong>Cash on Delivery</strong><small>Pay when it arrives</small></div></div></div>
+    <div class="col-6 col-lg-3"><div class="perk"><i class="bi bi-headset"></i><div><strong>24/7 Support</strong><small>We're always here</small></div></div></div>
+  </div></div>
+</section>
+
+<!-- ============ CATEGORIES ============ -->
+<section class="section-pad pb-0">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="eyebrow">Browse</span>
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="title-rule"></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-12 col-md-4 reveal"><a href="#shop" class="cat-tile" data-go-cat="kurta"><img src="images/embroidered-kurta.svg" data-local="images/embroidered-kurta" data-photo="https://clothsvilla.com/cdn/shop/files/embroidered-with-real-mirror-work-green-color-men_s-kurta_5_1024x1024.webp?v=1741937999" referrerpolicy="no-referrer" alt="Kurta Shalwar"><div class="cat-label"><h3>Kurta Shalwar</h3><span class="cat-arrow"><i class="bi bi-arrow-right"></i></span></div></a></div>
+      <div class="col-12 col-md-4 reveal d1"><a href="#shop" class="cat-tile" data-go-cat="tshirt"><img src="images/tshirt.svg" data-local="images/tshirt" data-photo="https://fashionclinik.com/wp-content/uploads/2024/03/Collar-T-Shirt-for-Men-Crocktee6-scaled.jpg" referrerpolicy="no-referrer" alt="T-Shirts"><div class="cat-label"><h3>T-Shirts</h3><span class="cat-arrow"><i class="bi bi-arrow-right"></i></span></div></a></div>
+      <div class="col-12 col-md-4 reveal d2"><a href="#shop" class="cat-tile" data-go-cat="jeans"><img src="images/jeans.svg" data-local="images/jeans" data-photo="https://www.careofcarl.com/bilder/artiklar/zoom/25557711r_1.jpg?m=1694674976" referrerpolicy="no-referrer" alt="Jeans"><div class="cat-label"><h3>Jeans</h3><span class="cat-arrow"><i class="bi bi-arrow-right"></i></span></div></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHOP ============ -->
+<section class="section-pad" id="shop">
+  <div class="container">
+    <div class="text-center mb-4 reveal">
+      <span class="eyebrow">Our Collection</span>
+      <h2 class="section-title">Our Products</h2>
+      <div class="title-rule"></div>
+    </div>
+
+    <div class="shop-tools mb-5">
+      <div class="filter-pills mb-3" role="group" aria-label="Filter by category">
+        <button class="filter-pill active" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-pill" data-filter="kurta" aria-pressed="false">Kurta Shalwar</button>
+        <button class="filter-pill" data-filter="tshirt" aria-pressed="false">T-Shirts</button>
+        <button class="filter-pill" data-filter="jeans" aria-pressed="false">Jeans</button>
+        <button class="filter-pill" data-filter="jackets" aria-pressed="false">Jackets</button>
+        <button class="filter-pill" data-filter="dresses" aria-pressed="false">Dresses</button>
+      </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2">
+        <span class="result-count" id="resultCount" aria-live="polite">6 products</span>
+        <select class="form-select w-auto" id="sortSelect" aria-label="Sort products">
+          <option value="featured">Sort: Featured</option>
+          <option value="low">Price: Low to High</option>
+          <option value="high">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row g-4" id="productGrid">
+        <div class="col-12 col-sm-6 col-lg-4 product-col reveal " data-id="1" data-name="Cotton Kurta" data-cat="kurta" data-price="2500" data-order="0">
+          <article class="product-card">
+            <div class="product-media">
+              <span class="badge-tag">New</span>
+              <button class="wish-btn" aria-label="Add Cotton Kurta to wishlist"><i class="bi bi-heart"></i></button>
+              <img src="images/kurta.svg" data-local="images/kurta" data-photo="https://edge.pk/cdn/shop/products/1_a9fea911-6fdd-4af5-b068-3dff4869d8be.jpg?v=1679476617" referrerpolicy="no-referrer" alt="Cotton Kurta">
+              <button class="quick-btn" type="button">Quick view</button>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Kurta Shalwar</span>
+              <h3 class="product-title">Cotton Kurta</h3>
+              <p class="product-desc">Premium quality fabric for daily wear.</p>
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <div class="price-row"><span class="price">Rs. 2,500</span></div>
+              <button class="btn btn-ink w-100 add-cart" type="button"><i class="bi bi-bag-plus me-1"></i> Add to Cart</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 product-col reveal d1" data-id="2" data-name="Denim Jeans" data-cat="jeans" data-price="3200" data-order="1" data-old="3800">
+          <article class="product-card">
+            <div class="product-media">
+              <span class="badge-tag sale">Sale</span>
+              <button class="wish-btn" aria-label="Add Denim Jeans to wishlist"><i class="bi bi-heart"></i></button>
+              <img src="images/jeans.svg" data-local="images/jeans" data-photo="https://www.careofcarl.com/bilder/artiklar/zoom/25557711r_1.jpg?m=1694674976" referrerpolicy="no-referrer" alt="Denim Jeans">
+              <button class="quick-btn" type="button">Quick view</button>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Jeans</span>
+              <h3 class="product-title">Denim Jeans</h3>
+              <p class="product-desc">Perfect fit slim jeans for men.</p>
+              <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
+              <div class="price-row"><span class="price">Rs. 3,200</span><span class="price-old">Rs. 3,800</span></div>
+              <button class="btn btn-ink w-100 add-cart" type="button"><i class="bi bi-bag-plus me-1"></i> Add to Cart</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 product-col reveal d2" data-id="3" data-name="Classic Polo T-Shirt" data-cat="tshirt" data-price="1500" data-order="2">
+          <article class="product-card">
+            <div class="product-media">
+              
+              <button class="wish-btn" aria-label="Add Classic Polo T-Shirt to wishlist"><i class="bi bi-heart"></i></button>
+              <img src="images/tshirt.svg" data-local="images/tshirt" data-photo="https://fashionclinik.com/wp-content/uploads/2024/03/Collar-T-Shirt-for-Men-Crocktee6-scaled.jpg" referrerpolicy="no-referrer" alt="Classic Polo T-Shirt">
+              <button class="quick-btn" type="button">Quick view</button>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">T-Shirts</span>
+              <h3 class="product-title">Classic Polo T-Shirt</h3>
+              <p class="product-desc">Soft cotton t-shirt in all sizes.</p>
+              <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
+              <div class="price-row"><span class="price">Rs. 1,500</span></div>
+              <button class="btn btn-ink w-100 add-cart" type="button"><i class="bi bi-bag-plus me-1"></i> Add to Cart</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 product-col reveal " data-id="4" data-name="Embroidered Kurta" data-cat="kurta" data-price="3500" data-order="3">
+          <article class="product-card">
+            <div class="product-media">
+              <span class="badge-tag">New</span>
+              <button class="wish-btn" aria-label="Add Embroidered Kurta to wishlist"><i class="bi bi-heart"></i></button>
+              <img src="images/embroidered-kurta.svg" data-local="images/embroidered-kurta" data-photo="https://clothsvilla.com/cdn/shop/files/embroidered-with-real-mirror-work-green-color-men_s-kurta_5_1024x1024.webp?v=1741937999" referrerpolicy="no-referrer" alt="Embroidered Kurta">
+              <button class="quick-btn" type="button">Quick view</button>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Kurta Shalwar</span>
+              <h3 class="product-title">Embroidered Kurta</h3>
+              <p class="product-desc">Elegant design for festive occasions.</p>
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <div class="price-row"><span class="price">Rs. 3,500</span></div>
+              <button class="btn btn-ink w-100 add-cart" type="button"><i class="bi bi-bag-plus me-1"></i> Add to Cart</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 product-col reveal d1" data-id="5" data-name="Leather Jacket" data-cat="jackets" data-price="5999" data-order="4" data-old="7499">
+          <article class="product-card">
+            <div class="product-media">
+              <span class="badge-tag sale">Sale</span>
+              <button class="wish-btn" aria-label="Add Leather Jacket to wishlist"><i class="bi bi-heart"></i></button>
+              <img src="images/jacket.svg" data-local="images/jacket" data-photo="https://commons.wikimedia.org/wiki/Special:FilePath/Lewis_Leathers_Bronx_Aviakit_Jacket.jpg?width=900" referrerpolicy="no-referrer" alt="Leather Jacket">
+              <button class="quick-btn" type="button">Quick view</button>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Jackets</span>
+              <h3 class="product-title">Leather Jacket</h3>
+              <p class="product-desc">Premium faux leather for a bold look.</p>
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <div class="price-row"><span class="price">Rs. 5,999</span><span class="price-old">Rs. 7,499</span></div>
+              <button class="btn btn-ink w-100 add-cart" type="button"><i class="bi bi-bag-plus me-1"></i> Add to Cart</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 product-col reveal d2" data-id="6" data-name="Floral Summer Dress" data-cat="dresses" data-price="2800" data-order="5">
+          <article class="product-card">
+            <div class="product-media">
+              
+              <button class="wish-btn" aria-label="Add Floral Summer Dress to wishlist"><i class="bi bi-heart"></i></button>
+              <img src="images/dress.svg" data-local="images/dress" data-photo="https://deal20one.com/wp-content/uploads/2026/01/Tropical.png" referrerpolicy="no-referrer" alt="Floral Summer Dress">
+              <button class="quick-btn" type="button">Quick view</button>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Dresses</span>
+              <h3 class="product-title">Floral Summer Dress</h3>
+              <p class="product-desc">Lightweight fabric for hot days.</p>
+              <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
+              <div class="price-row"><span class="price">Rs. 2,800</span></div>
+              <button class="btn btn-ink w-100 add-cart" type="button"><i class="bi bi-bag-plus me-1"></i> Add to Cart</button>
+            </div>
+          </article>
+        </div>
+    </div>
+
+    <div class="empty-state" id="emptyState">
+      <i class="bi bi-emoji-frown"></i>
+      <h4 class="mt-3">No products found</h4>
+      <p>Try a different search or category.</p>
+      <button class="btn btn-outline-ink" id="resetFilters">Reset filters</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SALE BANNER ============ -->
+<section class="pb-5" id="sale">
+  <div class="container">
+    <div class="sale-banner reveal">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7 position-relative">
+          <span class="eyebrow" style="color:var(--gold)">Flash Sale</span>
+          <h2 class="mt-2">Up to 50% off premium brands</h2>
+          <p class="text-white-50 mb-4">Offer ends soon — add your favourites to the cart before the timer runs out.</p>
+          <a href="#shop" class="btn btn-accent btn-lg px-4" data-go-cat="all">Shop the sale</a>
+        </div>
+        <div class="col-lg-5 position-relative">
+          <div class="countdown justify-content-lg-end" aria-label="Sale countdown">
+            <div class="box"><span class="num" id="cdD">00</span><small>Days</small></div>
+            <div class="box"><span class="num" id="cdH">00</span><small>Hours</small></div>
+            <div class="box"><span class="num" id="cdM">00</span><small>Mins</small></div>
+            <div class="box"><span class="num" id="cdS">00</span><small>Secs</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section-pad pt-4">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="eyebrow">Reviews</span>
+      <h2 class="section-title">Loved by Customers</h2>
+      <div class="title-rule"></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal"><div class="review-card"><div class="stars mb-2">★★★★★</div><p class="quote">“The cotton kurta fits perfectly and the fabric is so soft. Delivery took only two days.”</p><div class="who"><span class="avatar">A</span><div><strong>Ahmed R.</strong><div class="small text-muted">Karachi</div></div></div></div></div>
+      <div class="col-md-4 reveal d1"><div class="review-card"><div class="stars mb-2">★★★★★</div><p class="quote">“Great jeans for the price. Easy return process when I needed a different size.”</p><div class="who"><span class="avatar">S</span><div><strong>Saad K.</strong><div class="small text-muted">Lahore</div></div></div></div></div>
+      <div class="col-md-4 reveal d2"><div class="review-card"><div class="stars mb-2">★★★★☆</div><p class="quote">“Lovely summer dress, the colours look just like the photos. Will order again.”</p><div class="who"><span class="avatar">F</span><div><strong>Fatima N.</strong><div class="small text-muted">Islamabad</div></div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUICK VIEW MODAL ============ -->
+<div class="modal fade qv-modal" id="quickView" tabindex="-1" aria-labelledby="qvName" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="row g-0">
+        <div class="col-md-5"><img id="qvImg" src="" alt="" referrerpolicy="no-referrer"></div>
+        <div class="col-md-7 p-4 p-lg-5 position-relative">
+          <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          <span class="product-cat" id="qvCat"></span>
+          <h3 class="mt-1" id="qvName"></h3>
+          <div class="price-row"><span class="price fs-4" id="qvPrice"></span><span class="price-old" id="qvOld"></span></div>
+          <p class="text-muted" id="qvDesc"></p>
+          <div class="mb-3"><div class="form-label mb-2">Size</div>
+            <label class="size-opt"><input type="radio" name="size" value="S"><span>S</span></label>
+            <label class="size-opt"><input type="radio" name="size" value="M" checked><span>M</span></label>
+            <label class="size-opt"><input type="radio" name="size" value="L"><span>L</span></label>
+            <label class="size-opt"><input type="radio" name="size" value="XL"><span>XL</span></label>
+          </div>
+          <div class="d-flex align-items-center gap-3 flex-wrap">
+            <div class="qty"><button id="qvMinus" type="button" aria-label="Decrease">−</button><span id="qvQty">1</span><button id="qvPlus" type="button" aria-label="Increase">+</button></div>
+            <button class="btn btn-accent px-4" id="qvAdd" type="button"><i class="bi bi-bag-plus me-1"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4 g-lg-5">
+      <div class="col-lg-4">
+        <h5 class="brand-font fs-4">Clothes<span style="color:var(--accent)">.</span>Store</h5>
+        <p class="small pe-lg-5">Quality kurtas, jeans, tees and more — made comfortable, priced fairly, delivered across Pakistan.</p>
+        <div class="social mt-3">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Explore</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Shop</h5>
+        <ul class="footer-links">
+          <li><a href="index.html?cat=kurta#shop">Kurta Shalwar</a></li>
+          <li><a href="index.html?cat=tshirt#shop">T-Shirts</a></li>
+          <li><a href="index.html?cat=jeans#shop">Jeans</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Newsletter</h5>
+        <p class="small">Get 10% off your first order and early access to sales.</p>
+        <form class="newsletter-form input-group" novalidate>
+          <input type="email" class="form-control" placeholder="Your email" aria-label="Email address">
+          <button class="btn btn-accent" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+      <span>© <span class="js-year">2024</span> Clothes Store. All rights reserved.</span>
+      <span>Made with <i class="bi bi-heart-fill" style="color:var(--accent)"></i> in Karachi</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
